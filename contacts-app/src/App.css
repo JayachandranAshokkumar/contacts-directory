@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+button {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.editButton {
+    background-color: whitesmoke;
+    color: midnightblue;
+    border-color: midnightblue;
+    width: 40%;
+    height: 100%;
+    padding-block: 2%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .editButton:hover {
+        background-color: midnightblue;
+        color: white;
+        border-color: #aaa;
+    }
+
+.deleteButton {
+    background-color: whitesmoke;
+    color: red;
+    border-color: red;
+    width: 40%;
+    height: 100%;
+    padding-block: 2%;
+    margin-left: 10%
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    .deleteButton:hover {
+        background-color: red;
+        color: white;
+        border-color: #aaa;
+    }
+
+.centerButton {
+    background-color: white;
+    color: midnightblue;
+    border-color: midnightblue;
+    width: 25%;
+    margin: 0 auto;
+    padding-block: 1%;
+    margin: 0;
+    position: absolute;
+    left: 40%;
 }
 
-.App-link {
-  color: #61dafb;
+    .centerButton:hover {
+        background-color: midnightblue;
+        color: white;
+        border-color: #aaa;
+    }
+
+.backButton {
+    background-color: white;
+    color: midnightblue;
+    border-color: midnightblue;
+    width: 10%;
+    margin: 0 auto;
+    padding-block: 0.5%;
+    margin: 0;
+    position: absolute;
+    left: 55%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    .backButton:hover {
+        background-color: midnightblue;
+        color: white;
+        border-color: #aaa;
+    }
+
+.submitButton {
+    background-color: white;
+    color: midnightblue;
+    border-color: midnightblue;
+    width: 10%;
+    margin: 0 auto;
+    padding-block: 0.5%;
+    margin: 0;
+    position: absolute;
+    left: 35%;
+}
+
+    .submitButton:hover {
+        background-color: midnightblue;
+        color: white;
+        border-color: #aaa;
+    }
+
+.submitDeleteButton {
+    background-color: white;
+    color: red;
+    border-color: red;
+    width: 10%;
+    margin: 0 auto;
+    padding-block: 0.5%;
+    margin: 0;
+    position: absolute;
+    left: 35%;
+}
+
+    .submitDeleteButton:hover {
+        background-color: red;
+        color: white;
+        border-color: #aaa;
+    }
+
+.bgNetworkError {
+    width: 100%;
+    height: 100%;
+    background-image: url("../Images/SomethingIsMissing.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.tableHeader th {
+    background-color: midnightblue !important;
+    color: white !important;
 }
