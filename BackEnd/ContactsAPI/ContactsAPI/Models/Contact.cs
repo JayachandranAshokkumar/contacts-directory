@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace ContactsAPI.Models
 {
     public class Contact
     {
-        // Insert Contact Fields Here
+        [Required]
+        public int Id { get; set; }
+        public string ContactName { get; set; }
+        [RegularExpression("([0-9]+)")]
+        public string Number { get; set; }
+        public string City { get; set; }
     }
 }
