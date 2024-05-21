@@ -97,7 +97,7 @@ const ContactList: React.FC<selectedItem> = ({ selectedId }) => {
                             <p>Error: {error.message}</p>
                         ) : (
                             <div>
-                                <table className="table table-hover table-striped table table-hover table-striped table-bordered">
+                                <table className="table table-hover table-striped table-bordered">
                                     <thead className="tableHeader">
                                         <tr>
                                             <th>FIELD NAMES</th><th>VALUES</th>
